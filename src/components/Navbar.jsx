@@ -6,7 +6,7 @@ export default function Navbar({ toggleTheme }) {
       <div>
         <a href="#projects">Proyectos</a>
         <a href="#about">Sobre mí</a>
-        <a href="/cv.pdf" target="_blank">CV</a>
+        <a href="../../public/CVangelmanzano.pdf" target="_blank">CV</a>
 
         <button onClick={toggleTheme}>
           🌙
