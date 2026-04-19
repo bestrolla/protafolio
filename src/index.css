@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+.navbar a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* ABOUT */
+.about {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TECH TAGS */
+.tech span {
+  background: #eee;
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* LINKS */
+.links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: #007bff;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* DARK MODE */
+.dark {
+  background: #0f0f0f;
+  color: white;
+}
+
+.dark .card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.dark .navbar {
+  background: #000;
+}
+
+.dark .links a {
+  color: #ddd;
+}
+
+.dark .tech span {
+  background: #333;
+  color: #fff;
+}
+
+/* BUTTON GLOBAL */
+button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* filtro */
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* BOTONES */
+.filters button {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+.filters button:hover {
+  background: #111;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* BOTÓN ACTIVO (IMPORTANTE) */
+.filters button.active {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
