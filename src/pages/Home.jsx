@@ -1,3 +1,4 @@
+import MatrixRain from "../components/MatrixRain";
 import { useState } from "react";
 import { projects } from "../data/Projects";
 import ProjectCard from "../components/ProjectCard";
@@ -10,10 +11,11 @@ export default function Home() {
   );
 
   return (
-    <div>
+    <div className="home-page">
 
       {/* HERO */}
       <section className="hero">
+        <MatrixRain />
         <h1>Full Stack Developer</h1>
         <p>React · PHP · MySQL · MongoDB</p>
       </section>
@@ -29,11 +31,36 @@ export default function Home() {
 
       {/* FILTER */}
       <section className="filters">
-        <button onClick={() => setFilter("all")}>Todos</button>
-        <button onClick={() => setFilter("React")}>React</button>
-        <button onClick={() => setFilter("PHP")}>PHP</button>
-        <button onClick={() => setFilter("MySQL")}>MySQL</button>
-        <button onClick={() => setFilter("MongoDB")}>MongoDB</button>
+        <button
+          className={filter === "all" ? "active" : ""}
+          onClick={() => setFilter("all")}
+        >
+          Todos
+        </button>
+        <button
+          className={filter === "React" ? "active" : ""}
+          onClick={() => setFilter("React")}
+        >
+          React
+        </button>
+        <button
+          className={filter === "PHP" ? "active" : ""}
+          onClick={() => setFilter("PHP")}
+        >
+          PHP
+        </button>
+        <button
+          className={filter === "MySQL" ? "active" : ""}
+          onClick={() => setFilter("MySQL")}
+        >
+          MySQL
+        </button>
+        <button
+          className={filter === "MongoDB" ? "active" : ""}
+          onClick={() => setFilter("MongoDB")}
+        >
+          MongoDB
+        </button>
       </section>
 
       {/* PROJECTS */}
@@ -57,6 +84,10 @@ export default function Home() {
           📧 Enviar Email
         </a>
       </section>
+
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Angel Manzano. Todos los derechos reservados.</p>
+      </footer>
 
     </div>
   );

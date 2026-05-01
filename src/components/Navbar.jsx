@@ -1,17 +1,31 @@
-export default function Navbar({ toggleTheme }) {
+export default function Navbar({ toggleTheme, isMenuOpen, toggleMenu }) {
   return (
-    <nav className="navbar">
-      <h2>Ángel Dev</h2>
-
-      <div>
-        <a href="#projects">Proyectos</a>
-        <a href="#about">Sobre mí</a>
-        <a href="/CVangelmanzano.pdf" target="_blank" rel="noreferrer">CV</a>
-
-        <button onClick={toggleTheme}>
-          🌙
+    <>
+      {!isMenuOpen && (
+        <button
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Abrir menu"
+        >
+          ☰
         </button>
-      </div>
-    </nav>
+      )}
+
+      {isMenuOpen && <div className="menu-overlay" onClick={toggleMenu} />}
+
+      <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+        <h2>Angel Manzano</h2>
+
+        <div className="nav-links">
+          <a href="#projects" onClick={toggleMenu}> Proyectos </a>
+          <a href="#about" onClick={toggleMenu}> Sobre mí </a>
+          <a href="/CVangelmanzano.pdf" target="_blank" rel="noreferrer" onClick={toggleMenu}> CV </a>
+
+          <button className="theme-toggle" onClick={toggleTheme}>
+            🌙
+          </button>
+        </div>
+      </nav>
+    </>
   );
 }
