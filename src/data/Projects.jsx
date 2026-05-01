@@ -5,7 +5,7 @@ export const projects = [
     tech: ["React", "PHP", "MySQL"],
     demo: "#",
     github: "#",
-    image: "/images/inventory.png"
+    image: "/images/ceneac.png"
   },
   {
     title: "App con MongoDB",
@@ -13,6 +13,6 @@ export const projects = [
     tech: ["React", "MongoDB"],
     demo: "#",
     github: "#",
-    image: "/images/mongodb-app.png"
+    image: "/images/ciencias.ico"
   }
 ];

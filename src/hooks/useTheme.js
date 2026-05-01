@@ -1,10 +1,1 @@
-// src/hooks/useTheme.js (opcional pero pro)
-import { useState } from "react";
-
-export default function useTheme() {
-  const [dark, setDark] = useState(false);
-
-  const toggle = () => setDark(!dark);
-
-  return { dark, toggle };
-}
+// Este archivo ya no es necesario porque el modo claro ha sido eliminado.

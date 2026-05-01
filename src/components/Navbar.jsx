@@ -1,4 +1,4 @@
-export default function Navbar({ toggleTheme, isMenuOpen, toggleMenu }) {
+export default function Navbar({isMenuOpen, toggleMenu }) {
   return (
     <>
       {!isMenuOpen && (
@@ -21,9 +21,7 @@ export default function Navbar({ toggleTheme, isMenuOpen, toggleMenu }) {
           <a href="#about" onClick={toggleMenu}> Sobre mí </a>
           <a href="/CVangelmanzano.pdf" target="_blank" rel="noreferrer" onClick={toggleMenu}> CV </a>
 
-          <button className="theme-toggle" onClick={toggleTheme}>
-            🌙
-          </button>
+         
         </div>
       </nav>
     </>
