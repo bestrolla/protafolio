@@ -1,14 +1,14 @@
 export const projects = [
   {
-    title: "Sistema de Inventario",
-    description: "CRUD con React + PHP + MySQL",
-    tech: ["React", "PHP", "MySQL"],
+    title: "Sistema de gestión de cursos universitarios",
+    description: "CRUD con JavaScript + PHP + MySQL, historial de calificaciones, gestión de usuarios.",
+    tech: ["JavaScript", "CSS3", "PHP", "MySQL"],
     demo: "#",
     github: "#",
     image: "/images/ceneac.png"
   },
   {
-    title: "App con MongoDB",
+    title: "sistema de gestión de inventario ",
     description: "Sistema full stack con NoSQL",
     tech: ["React", "MongoDB"],
     demo: "#",
