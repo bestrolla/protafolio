@@ -221,6 +221,9 @@ section {
 .contact .btn {
   margin: 10px 5px; /* Añadir espacio entre los botones */
 }
+.card .btn {
+  margin: 10px 15px;
+}
 
 /* DARK MODE */
 .dark {

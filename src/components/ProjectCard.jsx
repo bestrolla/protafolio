@@ -14,6 +14,14 @@ export default function ProjectCard({ project }) {
         <p><strong>Backend:</strong> {project.description.backend || "N/A"}</p>
         <p><strong>Base de datos:</strong> {project.description.database || "N/A"}</p>
       </div>
+      <div className="project-links">
+        <a href={project.demo} className="btn" target="_blank" rel="noopener noreferrer">
+          Demo
+        </a>
+        <a href={project.github} className="btn" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </div>
     </motion.div>
   );
 }
