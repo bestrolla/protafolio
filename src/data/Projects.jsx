@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Sistema de gestión de cursos universitarios",
-    description: "CRUD con JavaScript + PHP + MySQL, historial de calificaciones, gestión de usuarios.",
+    description: "tecnologías utilizadas: JavaScript, CSS3, PHP y MySQL",
     tech: ["JavaScript", "CSS3", "PHP", "MySQL"],
     demo: "#",
     github: "#",
@@ -24,11 +24,11 @@ export const projects = [
     image: "/images/smartops.jpeg"
   },
    {
-    title: "sistema de administración de biblioteca ",
+    title: "sistema de administración de deudas",
     description: " con NoSQL",
     tech: ["React", "MongoDB"],
     demo: "#",
     github: "#",
-    image: "/images/"
+    image: "/images/bestrolla.jpg"
   }
 ];
