@@ -14,7 +14,7 @@ export default function Navbar({isMenuOpen, toggleMenu }) {
       {isMenuOpen && <div className="menu-overlay" onClick={toggleMenu} />}
 
       <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
-        <h2>Angel Manzano</h2>
+        
 
         <div className="nav-links">
           <a href="#projects" onClick={toggleMenu}> Proyectos </a>

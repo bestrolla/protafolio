@@ -16,8 +16,8 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <MatrixRain />
-        <h1>Full Stack Developer</h1>
-        <p>React · PHP · MySQL · MongoDB</p>
+        <h1>ANGEL MANZANO</h1>
+        <p>Desarrollador Full Stack</p>
       </section>
 
       {/* ABOUT */}
