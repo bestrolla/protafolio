@@ -14,5 +14,21 @@ export const projects = [
     demo: "#",
     github: "#",
     image: "/images/ciencias.ico"
+  },
+   {
+    title: "sistema de administración de empresarial ",
+    description: "Sistema full",
+    tech: ["React", "MongoDB"],
+    demo: "#",
+    github: "#",
+    image: "/images/"
+  },
+   {
+    title: "sistema de administración de biblioteca ",
+    description: " con NoSQL",
+    tech: ["React", "MongoDB"],
+    demo: "#",
+    github: "#",
+    image: "/images/smart.jpeg"
   }
 ];
