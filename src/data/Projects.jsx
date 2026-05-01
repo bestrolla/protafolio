@@ -21,7 +21,7 @@ export const projects = [
     tech: ["React", "MongoDB"],
     demo: "#",
     github: "#",
-    image: "/images/"
+    image: "/images/smartops.jpeg"
   },
    {
     title: "sistema de administración de biblioteca ",
@@ -29,6 +29,6 @@ export const projects = [
     tech: ["React", "MongoDB"],
     demo: "#",
     github: "#",
-    image: "/images/smart.jpeg"
+    image: "/images/"
   }
 ];
