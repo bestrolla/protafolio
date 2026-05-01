@@ -38,8 +38,8 @@ export default function Home() {
           Todos
         </button>
         <button
-          className={filter === "React" ? "active" : ""}
-          onClick={() => setFilter("React")}
+          className={filter === "React.JS" ? "active" : ""}
+          onClick={() => setFilter("React.JS")}
         >
           React
         </button>
@@ -60,6 +60,37 @@ export default function Home() {
           onClick={() => setFilter("MongoDB")}
         >
           MongoDB
+        </button>
+       
+        <button
+          className={filter === "Tailwind.CSS" ? "active" : ""}
+          onClick={() => setFilter("Tailwind.CSS")}
+        >
+          Tailwind.CSS
+        </button>
+        <button
+          className={filter === "Node.JS" ? "active" : ""}
+          onClick={() => setFilter("Node.JS")}
+        >
+          Node.JS
+        </button>
+        <button
+          className={filter === "Express.JS" ? "active" : ""}
+          onClick={() => setFilter("Express.JS")}
+        >
+          Express.JS
+        </button>
+        <button
+          className={filter === "TypeScript" ? "active" : ""}
+          onClick={() => setFilter("TypeScript")}
+        >
+          TypeScript
+        </button>
+        <button
+          className={filter === "Firebase" ? "active" : ""}
+          onClick={() => setFilter("Firebase")}
+        >
+          Firebase
         </button>
       </section>
 
