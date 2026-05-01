@@ -24,8 +24,7 @@ export default function Home() {
       <section id="about" className="about">
         <h2>Sobre mí</h2>
         <p>
-          Soy desarrollador Full Stack con experiencia en React, PHP, MySQL y MongoDB.
-          Me enfoco en construir aplicaciones funcionales, escalables y bien estructuradas.
+        Soy programador con experiencia en el desarrollo de soluciones eficientes y escalables, enfocado en la escritura de código limpio y mantenible. Manejo diversos lenguajes de programación y tecnologías modernas, con capacidad para adaptarme rápidamente a nuevos entornos y herramientas. Me destaco por el pensamiento lógico, la resolución de problemas y el trabajo en equipo, contribuyendo activamente en todas las etapas del desarrollo de software, desde el diseño hasta la implementación y optimización.
         </p>
       </section>
 
