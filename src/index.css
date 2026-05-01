@@ -217,6 +217,11 @@ section {
   background: #176642;
 }
 
+/* CONTACT BUTTONS */
+.contact .btn {
+  margin: 10px 5px; /* Añadir espacio entre los botones */
+}
+
 /* DARK MODE */
 .dark {
   background: #050505;
