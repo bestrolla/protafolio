@@ -24,7 +24,7 @@ export default function Home() {
       <section id="about" className="about">
         <h2>Sobre mí</h2>
         <p>
-        Soy programador con experiencia en el desarrollo de soluciones eficientes y escalables, enfocado en la escritura de código limpio y mantenible. Manejo diversos lenguajes de programación y tecnologías modernas, con capacidad para adaptarme rápidamente a nuevos entornos y herramientas. Me destaco por el pensamiento lógico, la resolución de problemas y el trabajo en equipo, contribuyendo activamente en todas las etapas del desarrollo de software, desde el diseño hasta la implementación y optimización.
+  Programador con experiencia en soluciones eficientes y escalables, especializado en código limpio y mantenible. Dominio de múltiples lenguajes y tecnologías modernas, con gran capacidad de adaptación. Destaca por su pensamiento lógico, resolución de problemas y trabajo en equipo, participando activamente en todas las fases del desarrollo: diseño, implementación y optimización.
         </p>
       </section>
 
