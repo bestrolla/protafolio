@@ -18,9 +18,9 @@ export default function ProjectCard({ project }) {
         <a href={project.demo} className="btn" target="_blank" rel="noopener noreferrer">
           Demo
         </a>
-        <a href={project.github} className="btn" target="_blank" rel="noopener noreferrer">
+        {/* <a href={project.github} className="btn" target="_blank" rel="noopener noreferrer">
           GitHub
-        </a>
+        </a> */}
       </div>
     </motion.div>
   );
