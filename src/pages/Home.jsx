@@ -113,7 +113,7 @@ export default function Home() {
         <a href="mailto:angelmanzano01092003@gmail.com" className="btn">
           📧 Enviar Email
         </a>
-        <a href="https://wa.me/+574160480190" className="btn" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/+584160480190" className="btn" target="_blank" rel="noopener noreferrer">
           📱 Enviar WhatsApp
         </a>
       </section>
