@@ -19,7 +19,7 @@ export const projects = [
       database: "MySQL"
     },
     tech: ["JavaScript", "PHP", "MySQL"],
-    demo: "#",
+    demo: "https://cafetin-weld.vercel.app/login/inicio/vista/inicio.php",
     github: "#",
     image: "/images/ciencias.ico"
   },
