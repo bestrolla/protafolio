@@ -43,7 +43,7 @@ export const projects = [
       database: "MySQL"
     },
     tech: ["JavaScript", "PHP", "MySQL"],
-    demo: "#",
+    demo: "https://saci-iota.vercel.app/",
     github: "#",
     image: "/images/bestrolla.jpg"
   }
