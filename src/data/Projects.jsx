@@ -7,7 +7,7 @@ export const projects = [
       database: "MySQL"
     },
     tech: ["JavaScript", "PHP", "MySQL"],
-    demo: "#",
+    demo: "https://ceneac.vercel.app/login/login/vista/index.php",
     github: "#",
     image: "/images/ceneac.png"
   },
