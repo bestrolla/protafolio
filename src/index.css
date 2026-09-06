@@ -225,6 +225,36 @@ section {
   margin: 10px 15px;
 }
 
+.project-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-links .btn {
+  margin: 10px 0 0;
+}
+
+.info-button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.project-info {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-left: 3px solid #1f7a52;
+  border-radius: 6px;
+  background: #e9faf1;
+  color: #214635;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
 /* DARK MODE */
 .dark {
   background: #050505;
@@ -423,6 +453,12 @@ button:hover {
 
 .dark .btn:hover {
   background: #2a2a2a;
+}
+
+.dark .project-info {
+  background: #202b25;
+  color: #e4f5eb;
+  border-left-color: #65b98b;
 }
 
 .dark .contact {

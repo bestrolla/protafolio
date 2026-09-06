@@ -6,6 +6,7 @@ export const projects = [
       backend: "PHP",
       database: "MySQL"
     },
+    info: "",
     tech: ["JavaScript", "PHP", "MySQL"],
     demo: "https://ceneac.vercel.app/login/login/vista/index.php",
     github: "#",
@@ -18,6 +19,7 @@ export const projects = [
       backend: "PHP",
       database: "MySQL"
     },
+    info: "",
     tech: ["JavaScript", "PHP", "MySQL"],
     demo: "https://cafetin-weld.vercel.app/login/inicio/vista/inicio.php",
     github: "#",
@@ -30,6 +32,7 @@ export const projects = [
       backend: "node.JS, express.JS, typescript, firebase",
       database: "mongoDB"
     },
+    info: "",
     tech: [ "React.JS", "Node.JS", "MongoDB", "Tailwind.CSS", "Express.JS", "TypeScript", "Firebase"],
     demo: "https://smartops-teal.vercel.app/",
     github: "#",
@@ -42,6 +45,7 @@ export const projects = [
       backend: "PHP",
       database: "MySQL"
     },
+    info: "",
     tech: ["JavaScript", "PHP", "MySQL"],
     demo: "https://saci-iota.vercel.app/",
     github: "#",
