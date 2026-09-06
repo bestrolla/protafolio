@@ -31,7 +31,7 @@ export const projects = [
       database: "mongoDB"
     },
     tech: [ "React.JS", "Node.JS", "MongoDB", "Tailwind.CSS", "Express.JS", "TypeScript", "Firebase"],
-    demo: "https://smartops-6i3qp1y9h-bestrolla2026.vercel.app/signin",
+    demo: "hhttps://smartops-teal.vercel.app/",
     github: "#",
     image: "/images/smartops.jpeg"
   },
