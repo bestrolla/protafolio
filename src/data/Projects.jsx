@@ -6,45 +6,7 @@ export const projects = [
       backend: "PHP",
       database: "MySQL"
     },
-    info: "Es un sistema de gestión académica y administrativa (cursos, estudiantes, profesores, salones, calendario, roles de usuario) construido en PHP puro + MySQL, sin framework, pensado para desplegarse en Vercel.
-
-Stack técnico
-Backend: PHP nativo, PDO para la base de datos.
-Base de datos: MySQL/MariaDB, con tablas como persona, usuario, estudiante, profesor, secretaria, rol, cursos, salon, calendario, clases_programadas, clases_reprogramadas, dias_festivos, eventos.
-Frontend: HTML + CSS + JavaScript "vanilla" (fetch/AJAX), sin frameworks tipo React/Vue. Usa FullCalendar para el calendario.
-Despliegue: Vercel (con vercel.json para rutas y api/index.php como router).
-Metodología / patrón de arquitectura
-
-1. Organización por rol y módulo (no por capa técnica clásica):
-El proyecto está dividido en carpetas de alto nivel por tipo de usuario: admin/, secretaria/, estudiante/, login/. Dentro de cada una hay submódulos funcionales (agregar_cursos, agregar_profe, agregar_salon, Calendario, lobby, espera, configuracion, etc.).
-
-2. Patrón "vista / lógica" dentro de cada módulo:
-Cada módulo se subdivide en:
-
-vista/ → HTML/PHP de presentación + CSS/JS del front.
-logica/ → scripts PHP que hacen las consultas a la BD y devuelven datos (muchos vía JSON, consumidos con fetch() desde el JS de la vista).
-
-Es básicamente un MVC simplificado y descentralizado: cada módulo tiene su propio mini "controlador" (logica) y su propia "vista", en vez de un único controlador central por entidad.
-
-3. Capa de "controladores" y BBDD legacy:
-Hay una carpeta controlador/ (persona, estudiante, usuario) y una BBDD/BBDD.php que representan la forma original en que se manejaban las conexiones a base de datos.
-
-4. Refactorización hacia un núcleo centralizado (core/):
-En una segunda etapa del proyecto (ver README_REFACTORIZACION.md y README_FIXES.md) se introdujo una capa core/ más ordenada:
-
-Database.php → conexión a BD con patrón Singleton y consultas preparadas.
-Session.php → manejo centralizado de sesiones.
-Security.php → hash de contraseñas (Argon2id), y compatibilidad con el sistema legacy de contraseñas en ASCII.
-AuthController.php / BaseController.php → base para controladores con autenticación, CSRF, manejo de roles.
-config/config.php → configuración centralizada (BD, rutas, roles, mensajes) vía variables de entorno con fallback a valores por defecto.
-
-Es decir, la metodología fue: empezar con un patrón simple vista/lógica por módulo, y luego refactorizar progresivamente hacia una arquitectura MVC más centralizada y segura, migrando de forma incremental (con compatibilidad hacia atrás) en vez de reescribir todo de golpe.
-
-5. Seguridad añadida en la refactorización:
-Migración de contraseñas en texto plano/ASCII a hash Argon2id, protección CSRF, rate limiting de intentos de login, recuperación de contraseña por token con expiración, logging de intentos fallidos (logs/failed_attempts_*.log).
-
-6. Control de acceso por roles:
-Roles definidos (administrador, secretaria, estudiante), con verificacion/verificar_acceso.php controlando qué puede ver cada uno, y sidebars distintos (components/navigation/admin_sidebar.php, secretaria_sidebar.php).",
+    info: "El proyecto CENEAC es un sistema de gestión académica (cursos, estudiantes, profesores, salones y calendario) desarrollado en PHP puro con MySQL (sin framework), con frontend en HTML/CSS/JavaScript vanilla y desplegado en Vercel. Usa un patrón MVC simplificado por módulos, donde cada funcionalidad (agregar cursos, profesores, salones, lobby de estudiantes, etc.) tiene su propia carpeta dividida en vista/ (interfaz) y logica/ (consultas a la base de datos, consumidas vía fetch/AJAX). El proyecto se desarrolló de forma iterativa: empezó con conexiones y controladores simples y dispersos, y luego se refactorizó hacia una capa core/ centralizada (conexión Singleton a BD, manejo de sesiones, seguridad con hash Argon2id, protección CSRF, control de acceso por roles: administrador, secretaria, estudiante), mejorando progresivamente la seguridad y el mantenimiento del código sin reescribir todo desde cero.",
     tech: ["JavaScript", "PHP", "MySQL"],
     demo: "https://ceneac.vercel.app/login/login/vista/index.php",
     github: "#",
