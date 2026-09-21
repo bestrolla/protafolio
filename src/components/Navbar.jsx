@@ -19,9 +19,6 @@ export default function Navbar({isMenuOpen, toggleMenu }) {
         <div className="nav-links">
           <a href="#projects" onClick={toggleMenu}> Proyectos </a>
           <a href="#about" onClick={toggleMenu}> Sobre mí </a>
-          <a href="/CVangelmanzano.pdf" target="_blank" rel="noreferrer" onClick={toggleMenu}> CV </a>
-
-         
         </div>
       </nav>
     </>

@@ -133,12 +133,76 @@ section {
 /* ABOUT */
 .about {
   padding: 40px 20px;
-  max-width: 800px;
+  max-width: 980px;
   margin: auto;
-  text-align: center;
   background: #1d6f4a;
   border: 1px solid #b9e9cf;
   border-radius: 12px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-intro {
+  display: grid;
+  gap: 16px;
+  text-align: left;
+}
+
+.about-intro p {
+  margin: 0;
+  line-height: 1.7;
+  color: #f5fff9;
+}
+
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.info-box ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #f5fff9;
+  line-height: 1.8;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-list span {
+  background: #dff7ea;
+  color: #164d36;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /* GRID */

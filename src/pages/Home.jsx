@@ -23,9 +23,55 @@ export default function Home() {
       {/* ABOUT */}
       <section id="about" className="about">
         <h2>Sobre mí</h2>
-        <p>
-  Programador con experiencia en soluciones eficientes y escalables, especializado en código limpio y mantenible. Dominio de múltiples lenguajes y tecnologías modernas, con gran capacidad de adaptación. Destaca por su pensamiento lógico, resolución de problemas y trabajo en equipo, participando activamente en todas las fases del desarrollo: diseño, implementación y optimización.
-        </p>
+
+        <div className="about-content">
+          <div className="about-intro">
+            <p>
+              Soy <strong>Angel Manzano</strong>, desarrollador Full Stack con enfoque en la creación de soluciones
+              digitales eficientes, escalables y bien estructuradas. Me apasiona convertir ideas en productos
+              funcionales, con lógica clara, buen rendimiento y una experiencia de usuario sólida.
+            </p>
+            <p>
+              Tengo experiencia trabajando en proyectos reales con tecnologías modernas, desde el análisis y diseño
+              inicial hasta la implementación, optimización y despliegue. Me gusta resolver problemas de forma
+              práctica, mantener un código limpio y trabajar de manera colaborativa en cada etapa del desarrollo.
+            </p>
+          </div>
+
+          <div className="about-columns">
+            <div className="info-box">
+              <h3>Habilidades</h3>
+              <ul>
+                <li>Desarrollo Full Stack</li>
+                <li>Diseño de sistemas y lógica de negocio</li>
+                <li>Creatividad y resolución de problemas</li>
+                <li>Trabajo en equipo y responsabilidad</li>
+                <li>Optimización de procesos y rendimiento</li>
+                <li>Arquitectura de aplicaciones web</li>
+              </ul>
+            </div>
+
+            <div className="info-box">
+              <h3>Tecnologías</h3>
+              <div className="tech-list">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Firebase</span>
+                <span>Tailwind CSS</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>REST API</span>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* FILTER */}
