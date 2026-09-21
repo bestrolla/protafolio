@@ -32,7 +32,7 @@ export const projects = [
       backend: "node.JS, express.JS, typescript, firebase",
       database: "mongoDB"
     },
-    info: "",
+    info: "SmartOps es una plataforma SaaS multi-tenant compuesta por tres piezas: un panel administrativo en React/Vite y TypeScript para gestionar clientes, negocios y operaciones; una API REST en Node.js/Express con MongoDB para autenticación, tenanting, planes, suscripciones, pagos, perfiles y módulos funcionales como CRM, citas, productos, inventario, pedidos, servicios, automatización y ecommerce; y un sitio web público en Next.js para marketing, captación de clientes y perfiles de marca. En conjunto, el sistema está diseñado para que cada tenant tenga su propio espacio, configuración y acceso a módulos según su plan, con una arquitectura modular que separa front-end, backend, lógica de negocio y experiencia pública, permitiendo escalar en varios negocios bajo la misma infraestructura",
     tech: [ "React.JS", "Node.JS", "MongoDB", "Tailwind.CSS", "Express.JS", "TypeScript", "Firebase"],
     demo: "https://smartops-teal.vercel.app/",
     github: "#",
