@@ -6,6 +6,14 @@ const AnimatedCard = motion.div;
 export default function ProjectCard({ project }) {
   const [showInfo, setShowInfo] = useState(false);
 
+  const platformIcon = {
+    PC: "🖥️",
+    Móvil: "📱",
+    Multiplataforma: "🌐",
+  };
+
+  const badgeClass = (project.platform || "PC").toLowerCase().replace(/\s+/g, "-");
+
   return (
     <AnimatedCard
       className="card"
@@ -13,8 +21,8 @@ export default function ProjectCard({ project }) {
       transition={{ duration: 0.2 }}
     >
       <img src={project.image} alt={project.title} className="project-image" />
-      <span className={`project-badge ${project.platform?.toLowerCase().replace(/\s+/g, "-") || "pc"}`}>
-        {project.platform || "PC"}
+      <span className={`project-badge ${badgeClass}`}>
+        {platformIcon[project.platform] || "🖥️"} {project.platform || "PC"}
       </span>
       <h3 style={{ textAlign: "center" }}>{project.title}</h3>
       <div className="project-description">
