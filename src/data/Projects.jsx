@@ -1,6 +1,7 @@
 export const projects = [
   {
     title: "Sistema de gestión de cursos universitarios",
+    platform: "PC",
     description: {
       frontend: "HTML5, JavaScript, CSS3",
       backend: "PHP",
@@ -14,6 +15,7 @@ export const projects = [
   },
   {
     title: "sistema de gestión de inventario ",
+    platform: "PC",
     description: {
       frontend: "HTML5, JavaScript, CSS3",
       backend: "PHP",
@@ -27,6 +29,7 @@ export const projects = [
   },
    {
     title: "sistema de administración de empresarial ",
+    platform: "Multiplataforma",
     description: {
       frontend: "react.JS, tailwind.CSS",
       backend: "node.JS, express.JS, typescript, firebase",
@@ -40,6 +43,7 @@ export const projects = [
   },
    {
     title: "sistema de administración de deudas",
+    platform: "Móvil",
     description: {
       frontend: "HTML5, JavaScript, CSS3",
       backend: "PHP",

@@ -13,6 +13,9 @@ export default function ProjectCard({ project }) {
       transition={{ duration: 0.2 }}
     >
       <img src={project.image} alt={project.title} className="project-image" />
+      <span className={`project-badge ${project.platform?.toLowerCase().replace(/\s+/g, "-") || "pc"}`}>
+        {project.platform || "PC"}
+      </span>
       <h3 style={{ textAlign: "center" }}>{project.title}</h3>
       <div className="project-description">
         <p><strong>Frontend:</strong> {project.description.frontend || "N/A"}</p>
