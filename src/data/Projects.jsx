@@ -19,7 +19,7 @@ export const projects = [
       backend: "PHP",
       database: "MySQL"
     },
-    info: "",
+    info: "Cafetín (CDC) es un sistema de gestión para un negocio tipo cafetería/quiosco (inventario, ventas, cuentas por cobrar y abonos, en USD/Bs), con perfiles de Administrador y Cajero, hecho en PHP puro + MySQL, frontend en HTML/CSS/JS vanilla, pensado para correr en WAMP localmente y desplegarse en Vercel. Sigue el mismo patrón modular por rol que CENEAC: carpetas admin/ y cajero/ con submódulos (inventario, caja, cuentas, configuración, lobby de venta), cada uno dividido en vista/ (interfaz) y logica/ (PHP que procesa datos vía AJAX/fetch), más un login con recuperación de contraseña por pregunta de seguridad. La capa de seguridad/infraestructura común vive en acces/ (control de acceso por sesión, CSRF con tokens firmados sin depender de sesión —pensado para serverless—, cabeceras de seguridad, navegación por rol), en vez de un core/ centralizado como en CENEAC. La conexión a BD (BBDD/BBDD.php) usa variables de entorno con fallback a credenciales fijas en el código (mismo patrón, y mismo riesgo de seguridad, que en CENEAC). El desarrollo también fue iterativo (108 commits, desde sept. 2025 hasta ago. 2026), con foco fuerte en hacer funcionar el sistema en modo serverless (manejo de sesiones en /tmp, router api/index.php, variables MYSQL_*), pero sin la refactorización hacia clases base/Singleton que sí se hizo en CENEAC",
     tech: ["JavaScript", "PHP", "MySQL"],
     demo: "https://cafetin-weld.vercel.app/login/inicio/vista/inicio.php",
     github: "#",
