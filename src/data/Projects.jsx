@@ -45,7 +45,7 @@ export const projects = [
       backend: "PHP",
       database: "MySQL"
     },
-    info: "",
+    info: "SACI es un sistema pequeño y bastante más simple que los dos anteriores: un control de deudas de bodega/tienda (clientes, deudas, pagos, tasa de cambio USD/Bs), hecho en PHP puro + MySQL (PDO), con frontend en HTML/CSS/JS mínimo, sin login ni roles (a diferencia de CENEAC y Cafetín). Usa un router propio en index.php que, según la ruta pedida, incluye el archivo correspondiente de index/vista/, y separa la lógica en index/logica/ (funciones PHP puras tipo crearCliente(), listarClientes(), etc., sin clases ni Singleton) consumida directamente desde las vistas PHP —no tanto vía AJAX/fetch como en los otros dos proyectos, sino más bien renderizado server-side con require. La conexión a BD (db.php) usa variables de entorno con fallback a localhost/root sin contraseña, e incluso crea la base de datos automáticamente si no existe. Incluye un modo respaldo que detecta si faltan tablas/vistas SQL y avisa al usuario en pantalla en lugar de romper la app. El desarrollo fue mucho más corto (solo 9 commits, entre mayo y agosto de 2026), concentrado casi todo en un solo día (12 de agosto) ajustando la configuración de Vercel y el router. En conjunto, es el proyecto menos maduro arquitectónicamente de los tres: no tiene capa core/ ni sistema de autenticación/roles, es esencialmente scripts PHP funcionales organizados por vista/lógica, sin abstracción adicional.",
     tech: ["JavaScript", "PHP", "MySQL"],
     demo: "https://saci-iota.vercel.app/",
     github: "#",
